@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyCity</string>
+
+    <!-- Restaurants: names -->
+    <string name="restaurant_1">Osteria del Borgo</string>
+    <string name="restaurant_2">La Greppia</string>
+    <string name="restaurant_3">Zi Rosa</string>
+    <string name="restaurant_4">Trattoria dal Baffo: il Casolare del Minestraio</string>
+    <string name="restaurant_5">Ristorante La Rocca</string>
+    <string name="restaurant_6">La Sangiovesa</string>
+    <string name="restaurant_7">Lazaroun</string>
+    <string name="restaurant_8">La Mi Mama</string>
+    <string name="restaurant_9">Osteria Io e Simone</string>
 </resources>
