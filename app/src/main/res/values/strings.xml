@@ -1,14 +1,102 @@
 <resources>
-    <string name="app_name">MyCity</string>
+    <string name="app_name">Rimini</string>
 
-    <!-- Restaurants: names -->
-    <string name="restaurant_1">Osteria del Borgo</string>
-    <string name="restaurant_2">La Greppia</string>
-    <string name="restaurant_3">Zi Rosa</string>
-    <string name="restaurant_4">Trattoria dal Baffo: il Casolare del Minestraio</string>
-    <string name="restaurant_5">Ristorante La Rocca</string>
-    <string name="restaurant_6">La Sangiovesa</string>
-    <string name="restaurant_7">Lazaroun</string>
-    <string name="restaurant_8">La Mi Mama</string>
-    <string name="restaurant_9">Osteria Io e Simone</string>
+
+    <!-- LUNCH AND DINNER -->
+
+    <string name="restaurant_1_name">La mi mama</string>
+    <string name="restaurant_2_name">Osteria io e Simone</string>
+    <string name="restaurant_3_name">Casina del bosco</string>
+    <string name="restaurant_4_name">Dalla Lella</string>
+    <string name="restaurant_5_name">Chi Burdlaz</string>
+    <string name="restaurant_6_name">Na pizz</string>
+    <string name="restaurant_7_name">La buca</string>
+    <string name="restaurant_8_name">Sbionta</string>
+
+    <string name="restaurant_1_address">Via Poletti 32</string>
+    <string name="restaurant_2_address">Piazza Teatini 3</string>
+    <string name="restaurant_3_address">Viale Antonio Beccadelli 15</string>
+    <string name="restaurant_4_address">Via Covignano 96</string>
+    <string name="restaurant_5_address">Viale Vespucci 63</string>
+    <string name="restaurant_6_address">Via Flaminia 175</string>
+    <string name="restaurant_7_address">Lungomare Tintori 5A</string>
+    <string name="restaurant_8_address">Viale Vespucci 85</string>
+
+    <string name="restaurant_1_description">La Mi Mama is the ideal place to experience relaxing moments, discovering the flavors and aromas of the ancient Romagna tradition. The fascinating bright space, the soft lights, the warm colours, the flowers, the furnishings, the sober accessories and the showcases full of fine wines, from the most renowned local and national companies, blend together giving diners a warm and particular atmosphere.</string>
+    <string name="restaurant_2_description">Very cute and welcoming place with warm lights that make you feel at home. Excellent product quality, impeccable service, great friendliness and kindness, fair prices.</string>
+    <string name="restaurant_3_description">The true Piadina Romagnola is born in this fabulous territory. We prepare the piadina doughs by hand, with love, in our kitchen. We are a big family, many people who help each other with the aim of always giving the best to our guests and a vast amount of smiles.</string>
+    <string name="restaurant_4_description">True Piadina made with hands and with the heart. Excellent piada, light and well filled. Many delicacies available, and also second courses that you can choose separately.</string>
+    <string name="restaurant_5_description">Excellent service, waiters who go from table to table smiling, humming and being friendly. Food? When the ingredients are excellent, the result can only be excellent. Every dish releases the passion behind it, work, experience and love.</string>
+    <string name="restaurant_6_description">Napizz is the most eccentric Italian food brand conceived, designed and created to amaze customers as if they were in a museum of contemporary pizza art. Napizz is Neapolitan sympathy, innovation and movement. Napizz is excellent raw materials and artisanal processing methods, continuous innovation to provide the customer with something unique.</string>
+    <string name="restaurant_7_description">Since 1970, a few steps from the Port of Rimini, the elegant and refined La Buca Restaurant offers the ideal choice to sit at the table and enjoy unparalleled culinary specialities. Here you do not just eat, but you live an experience of taste, colors and flavors of seafood combined with the timeless recipes of the Romagna tradition.</string>
+    <string name="restaurant_8_description">In Romagna, we know: if something is hot, it is not actually just hot, but "sbionta"! The sand fades under the scorching sun, the pan that comes out of the oven or the Piadina fades as soon as you remove it from the pan. This is why here, at Sbionta, you will find flavors that "sbiontano": Piadine, burgers and pizzas prepared on the spot, with quality raw materials and artisanal care. Because if it "sbionta" then it means that "it is done at the moment!"</string>
+
+
+
+    <!-- BREAKFAST -->
+
+    <string name="breakfast_1_name">Rinaldini</string>
+    <string name="breakfast_2_name">Pascucci</string>
+    <string name="breakfast_3_name">Caffè Ducale</string>
+    <string name="breakfast_4_name">Caffè Cavour</string>
+    <string name="breakfast_5_name">Embassy</string>
+
+    <string name="breakfast_1_address">Viale Vespucci 8</string>
+    <string name="breakfast_2_address">Viale Vespucci 3/A</string>
+    <string name="breakfast_3_address">Corso D\'Augusto 222</string>
+    <string name="breakfast_4_address">Piazza Cavour 12</string>
+    <string name="breakfast_5_address">Viale Vespucci 33</string>
+
+    <string name="breakfast_1_description">In just a few years, Roberto Rinaldini has been able to create an absolutely original, glamorous and elegant style, which stands out for his frequent "forays" into the fascinating world of fashion. A world he has always loved and from which he has been able to "steal" attention to detail and the search for stylistic perfection. Each of his desserts is conceived as a work in itself, a sartorial masterpiece whose basis, however, always remains the stubborn search for 360-degree quality: from the selection of raw materials to the processing techniques, up to the choice of packaging and sales environments.</string>
+    <string name="breakfast_2_description">With a consolidated presence in various countries, Caffè Pascucci represents Italian excellence in the world of coffee. If your dream is to have your own coffee shop and pursue quality, our formats are for you. For generations, Pascucci has been dedicated to creating unique experiences through coffee. Our passion for the art of coffee and commitment to sustainability make us a distinctive brand on the international scene.</string>
+    <string name="breakfast_3_description">What you have the pleasure of tasting at Ducale is the highest version of the famous drink, carefully prepared by the owner\'s skill, which is also expressed in the supply of raw materials and in the story of the various blends, with freshly ground beans and with origins ranging from the Indies, Africa and Latin America.</string>
+    <string name="breakfast_4_description">Caffè Cavour is one of the historic bars in Rimini with internal lounges where you can read the newspapers: it is one of the most elegant bars in Rimini, with very good coffee and an awesome italian mood.</string>
+    <string name="breakfast_5_description">One of the most beautiful testimonies of Italian Liberty architecture has been returned to Rimini, to the people of Rimini, to everyone. With Embassy, a new chapter in an 80-year history. The cult venue worthy of the 50s and 60s which hosted legends such as Mina, Ornella Vanoni, Giorgio Gaber, Walter Chiari, Lucio Battisti and Fred Buscaglione, presents itself in a new guise, weaving new connections. Embassy Restaurant is a multifunctional and transversal space where food, culture and music mix and contaminate each other.</string>
+
+
+
+    <!-- ACCOMMODATION -->
+
+    <string name="hotel_1_name">Grand Hotel di Rimini</string>
+    <string name="hotel_2_name">Hotel Sporting</string>
+    <string name="hotel_3_name">Hotel Imperiale</string>
+    <string name="hotel_4_name">Hotel Ambasciatori</string>
+    <string name="hotel_5_name">Hotel Villa Adriatica</string>
+    <string name="hotel_6_name">i-SUITE</string>
+
+
+
+    <!-- BEACH -->
+
+    <string name="beach_1_name">Bagno Tiki 26</string>
+    <string name="beach_2_name">Libra Bagni 63, 64 e 65</string>
+    <string name="beach_3_name">Bagno 81 No Problem</string>
+    <string name="beach_4_name">Bagno 124 Mario e Luca</string>
+    <string name="beach_5_name">Turquoise Beach Club</string>
+
+
+
+    <!-- ENTERTAINMENT -->
+
+    <string name="entertainment_1_name">Coconuts</string>
+    <string name="entertainment_2_name">Carnaby</string>
+    <string name="entertainment_3_name">Velvet</string>
+    <string name="entertainment_4_name">Altromondo</string>
+    <string name="entertainment_5_name">Life</string>
+    <string name="entertainment_6_name">Boabay</string>
+    <string name="entertainment_7_name">Fiabilandia</string>
+    <string name="entertainment_8_name">Italia in Miniatura</string>
+
+
+
+    <!-- CULTURE -->
+
+    <string name="culture_1_name">Arco di Augusto</string>
+    <string name="culture_2_name">Ponte di Tiberio</string>
+    <string name="culture_3_name">Tempio Malatestiano</string>
+    <string name="culture_4_name">Castel Sismondo</string>
+    <string name="culture_5_name">Vecchia Pescheria</string>
+    <string name="culture_6_name">Domus del Chirurgo</string>
+    <string name="culture_7_name">Fellini Museum</string>
+
 </resources>
