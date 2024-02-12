@@ -64,15 +64,41 @@
     <string name="hotel_5_name">Hotel Villa Adriatica</string>
     <string name="hotel_6_name">i-SUITE</string>
 
+    <string name="hotel_1_address">Parco Federico Fellini</string>
+    <string name="hotel_2_address">Viale Vespucci 20</string>
+    <string name="hotel_3_address">Viale Vespucci 16</string>
+    <string name="hotel_4_address">Viale Vespucci 22</string>
+    <string name="hotel_5_address">Viale Vespucci 3</string>
+    <string name="hotel_6_address">Viale Regina Elena 28</string>
+
+    <string name="hotel_1_description">A symbol of the sweet life and, above all, the place of Fellini\'s imagination: the five-star Grand Hotel Rimini has always been a myth of holiday resorts. You too can become part of the legend. Grand Hotel Rimini is a journey through time to discover a land with profound traditions and strong suggestions. Let yourself be fascinated by a beach holiday that, both in summer and out of season, can arouse rich emotions.</string>
+    <string name="hotel_2_description">Are you looking for a hotel in Rimini? Whatever the reason for your stay at Riviera Romagnola, whether it is a beach holiday or a business trip, by taking advantage of this Hotel Sporting offer at the best price you will be able to enjoy all the comforts of the Sporting hotel at the cheapest price available.</string>
+    <string name="hotel_3_description">Around you elegance, refinement, and the uniqueness of a 4-star hotel experience. In front, only the sea. Rimini, in Marina Centro, imagines a place for relaxing and tasting moments, in a wellness break with the view of the sea, all in a single 5-floors environment. When a hotel becomes a fascinating experience.</string>
+    <string name="hotel_4_description">At the 4-star Hotel Ambasciatori, tradition has always married elegance for a quality welcome characterized by style and class. Hotel Ambasciatori is among the most popular hotels in Rimini: for business trips, corporate meetings, relaxing weekends or splendid seaside holidays!</string>
+    <string name="hotel_5_description">In the heart of Rimini\'s Marina Centro there is an ancient jewel, a historic residence that has welcomed its guests since 1880 in an atmosphere of ancient elegance. Hotel Villa Adriatica in Rimini has seen the city change face and become one of the best known and loved tourist destinations for those who want a seaside stay full of services.</string>
+    <string name="hotel_6_description">A new concept of boutique hotel in Rimini, a design object, a wonderful architecture. A unique, unusual and disruptive place, where time expands into precious eternal moments to dedicate to self-care, to small things, to scents, to sensations.</string>
+
 
 
     <!-- BEACH -->
 
-    <string name="beach_1_name">Bagno Tiki 26</string>
-    <string name="beach_2_name">Libra Bagni 63, 64 e 65</string>
-    <string name="beach_3_name">Bagno 81 No Problem</string>
-    <string name="beach_4_name">Bagno 124 Mario e Luca</string>
+    <string name="beach_1_name">Tiki Bagno 26</string>
+    <string name="beach_2_name">Libra Beach</string>
+    <string name="beach_3_name">Rimini Dog No Problem</string>
+    <string name="beach_4_name">Bagni Ricci</string>
     <string name="beach_5_name">Turquoise Beach Club</string>
+
+    <string name="beach_1_address">Lungomare Tintori 30A</string>
+    <string name="beach_2_address">Lungomare Di Vittorio 8B</string>
+    <string name="beach_3_address">Lungomare Di Vittorio 28A</string>
+    <string name="beach_4_address">Lungomare Spadazzi 141–143</string>
+    <string name="beach_5_address">Lungomare Tintori 6</string>
+
+    <string name="beach_1_description">In the heart of Riviera Romagnola, you will find friendliness, high quality services and lots of comfort. Like every year, we are the favorite destination for people who want to spend entire days of sun and sea in the name of relaxation.</string>
+    <string name="beach_2_description">With approximately 25 thousand square-meters of extension, Libra Beach is one of the largest and most innovative beaches in the entire Riviera Romagnola; it also has an area reserved for suites widely spaced apart, to relax in complete peace. The animation staff takes care of the children\'s entertainment in the Baby Park. The offer of high quality services is completed with the two chiringuitos by the sea (Kokale 63 and Maina), the Gym, the Nautical Center and the Swimming School.</string>
+    <string name="beach_3_description">Our beach is made up of two beach establishments which are located next to each other: Bagno 81 No Problem, a family beach where there is a beach service for customers without dogs and the Rimini Dog No Problem dog beach, which is instead located at Bagno 82 and where it is possible to take dogs to the beach.</string>
+    <string name="beach_4_description">Do you know what is the only beach in Rimini that offers you a complete sea-based holiday? It is the Bagni Ricci beach. Since 1946 the Ricci family, a historic family of fishermen from Rimini, has lived and worked by the sea with one single goal: to make you feel good with your feet on the sand. Special dishes await you, while your feet are on the sand!</string>
+    <string name="beach_5_description">Our aim? make you live every day as if you were on holiday. 350 umbrellas, suites, sports fields, bar, restaurant, Chiringuito, relaxation areas and much more. Entertainment every evening with events, shows and DJ sets.</string>
 
 
 
@@ -82,10 +108,22 @@
     <string name="entertainment_2_name">Carnaby</string>
     <string name="entertainment_3_name">Velvet</string>
     <string name="entertainment_4_name">Altromondo</string>
-    <string name="entertainment_5_name">Life</string>
-    <string name="entertainment_6_name">Boabay</string>
-    <string name="entertainment_7_name">Fiabilandia</string>
-    <string name="entertainment_8_name">Italia in Miniatura</string>
+    <string name="entertainment_5_name">Boabay</string>
+    <string name="entertainment_6_name">Fiabilandia</string>
+
+    <string name="entertainment_1_address">Lungomare Tintori 5</string>
+    <string name="entertainment_2_address">Via Brindisi 20</string>
+    <string name="entertainment_3_address">Via Santa Aquilina 21</string>
+    <string name="entertainment_4_address">Via Flaminia 358</string>
+    <string name="entertainment_5_address">Via Delle Officine 24</string>
+    <string name="entertainment_6_address">Via Cardano 15</string>
+
+    <string name="entertainment_1_description">Coconuts is the right place to spend a special evening in company with your friends. The disco is open all year round, in winter there is dancing in the internal rooms, while in summer the events move to the Rimini seafront, a few steps from the beach.</string>
+    <string name="entertainment_2_description">The Carnaby Club is a historic 3-floors disco in Rimini that inaugurated its floors in 1968. In its history, it has gone through all the fashions, following musical evolution and always confirming itself as the protagonist of the coastal nights. Despite its longevity, however, it has never lost its freshness, nor has it ever changed the values it believes in: it has always remained faithful to its identity as a friendly, strongly international place, made up of people, smiles, enthusiasm, and dedicated to clean fun.</string>
+    <string name="entertainment_3_description">On the hills of Rimini, the most alternative club on Riviera Romagnola awaits you, the Velvet Club &amp; Factory. A multi-purpose club of 2500 square-meters divided into three rooms, two stages, a pizzeria and fast food area where you can refresh yourself, merchandising area, offices, laboratories, 2 rooms and a wonderful lake.</string>
+    <string name="entertainment_4_description">Altromondo Studios represents the progenitor of nightclubs history in Riccione and Rimini. With the first opening in 1967 it introduced a great change in the world of nightlife, becoming the point of reference for local inhabitants and tourists on holiday in Rimini and Riccione. This work has led the Club to play a central role in the national and international entertainment scene, continuing to attract the biggest names in the world dance scene such as Hardwell, Steve Aoki, Afrojack, Deorro, Nicky Romero, Timmy Trumpet and other great talents.</string>
+    <string name="entertainment_5_description">Slides, tunnels, inclined ramps, trampolines, platforms, a gigantic iceberg to climb and many other fun and adrenaline-filled inflatables. And, in addition, a space dedicated to children which they can access accompanied by an adult.</string>
+    <string name="entertainment_6_description">A beautiful park made up of simple and magical attractions suitable for the whole family, especially if you have small children, ideal for spending a carefree day with the family.</string>
 
 
 
@@ -98,5 +136,21 @@
     <string name="culture_5_name">Vecchia Pescheria</string>
     <string name="culture_6_name">Domus del Chirurgo</string>
     <string name="culture_7_name">Fellini Museum</string>
+
+    <string name="culture_1_address">Corso D\'Augusto</string>
+    <string name="culture_2_address">Corso D\'Augusto</string>
+    <string name="culture_3_address">Via IV Novembre 35</string>
+    <string name="culture_4_address">Piazza Malatesta</string>
+    <string name="culture_5_address">Piazza Cavour</string>
+    <string name="culture_6_address">Piazza Ferrari</string>
+    <string name="culture_7_address">Piazza Malatesta</string>
+
+    <string name="culture_1_description">Built in 27 BC with Istrian stone, in honor of Caesar Octavian Augustus, it is the oldest of the surviving Roman arches and stands at the arrival point of the Via Flaminia (which connected Rome to Rimini). The architecture is enhanced by a rich decorative apparatus, full of political and propagandistic meanings. The opening of the fornix, so wide that it could not be closed by doors, recalled the peace achieved after a long period of civil wars.</string>
+    <string name="culture_2_description">An imposing architectural work from the Roman era, the bridge was built over the Marecchia river by decree of the Emperor Augustus and its completion is due to his successor Tiberius (14–21 AD). Made of Istrian stone, with five arches, in Doric style, it represents one of the most notable surviving Roman bridges. The bridge marks the beginning of the consular streets, Emilia and Popilia, heading to the North and is located at the end of the main historic street of the city, Corso D\'Augusto.</string>
+    <string name="culture_3_description">Testimony of the Malatesta magnificence, it was Sigismondo Pandolfo Malatesta who ordered the works for the transformation of the ancient Romanesque-Gothic church of Saint Francesco into a splendid monument in harmony with the new Renaissance culture. Work on the temple began in 1450. The exterior is the work of the great genius Leon Battista Alberti and presents a majestic facade (unfinished in the upper part) inspired by the shapes of the Roman triumphal arch. The entire construction rests on a high base in Istrian stone, framed by cords taken from the base of Arco D\'Augusto.</string>
+    <string name="culture_4_description">Sigismondo began its construction on 20 March 1437. The castle was conceived as a palace and fortress at the same time, as a worthy seat for the court and the garrison, and as a sign of power and supremacy over the city. The construction retains a notable charm, with its large square towers and powerful walls, whose original effect, when they rose from the deep moat, must have been formidable, comparable, due to their inclination and grandeur, to pyramids.</string>
+    <string name="culture_5_description">Built by Giovan Francesco Buonamici in 1747, it reflects the economic importance of fishing in Rimini. It appears as a two-order lodge opened by three round arches; at the corners four statuettes of dolphins with a jet of water (the fountains for cleaning the fish). Inside there were long benches made of Istrian stone, where women sold the clams.</string>
+    <string name="culture_6_description">At the end of 1980, during street furniture works in the central Piazza Ferrari, an archaeological site of extraordinary importance was discovered, with evidence from the Roman age to the Middle Ages. In the area, close to the walls of Ariminum, not far from the ancient port, stood the "Domus del Chirurgo" (surgeon\'s house), so-called from the profession of the last owner, a doctor of Greek culture. Since 2007, Domus Del Chirurgo has been open to the public, a small Pompeii re-emerged from the darkness of the centuries in the historic heart of Rimini.</string>
+    <string name="culture_7_description">The Fellini Museum is a widespread museum center of a very new concept and the largest museum project dedicated to Federico Fellini. Three spaces are involved: Castel Sismondo, Palazzo del Fulgor and Piazza Malatesta. A space of creativity - included by the Ministry of Culture among the major national cultural heritage projects - in the name of Fellini\'s visionary nature, of cinema, of the relationship with the arts, in permanent dialogue between innovation and tradition.</string>
 
 </resources>
