@@ -13,6 +13,15 @@
     <string name="restaurant_7_name">La buca</string>
     <string name="restaurant_8_name">Sbionta</string>
 
+    <string name="restaurant_1_rate">4.4</string>
+    <string name="restaurant_2_rate">4.6</string>
+    <string name="restaurant_3_rate">4.5</string>
+    <string name="restaurant_4_rate">4.6</string>
+    <string name="restaurant_5_rate">4.3</string>
+    <string name="restaurant_6_rate">4.1</string>
+    <string name="restaurant_7_rate">4.1</string>
+    <string name="restaurant_8_rate">4.4</string>
+
     <string name="restaurant_1_address">Via Poletti 32</string>
     <string name="restaurant_2_address">Piazza Teatini 3</string>
     <string name="restaurant_3_address">Viale Antonio Beccadelli 15</string>
@@ -41,6 +50,12 @@
     <string name="breakfast_4_name">Caffè Cavour</string>
     <string name="breakfast_5_name">Embassy</string>
 
+    <string name="breakfast_1_rate">4.1</string>
+    <string name="breakfast_2_rate">4.0</string>
+    <string name="breakfast_3_rate">4.7</string>
+    <string name="breakfast_4_rate">4.3</string>
+    <string name="breakfast_5_rate">4.3</string>
+
     <string name="breakfast_1_address">Viale Vespucci 8</string>
     <string name="breakfast_2_address">Viale Vespucci 3/A</string>
     <string name="breakfast_3_address">Corso D\'Augusto 222</string>
@@ -64,6 +79,13 @@
     <string name="hotel_5_name">Hotel Villa Adriatica</string>
     <string name="hotel_6_name">i-SUITE</string>
 
+    <string name="hotel_1_rate">4.0</string>
+    <string name="hotel_2_rate">4.5</string>
+    <string name="hotel_3_rate">4.5</string>
+    <string name="hotel_4_rate">4.5</string>
+    <string name="hotel_5_rate">4.5</string>
+    <string name="hotel_6_rate">5.0</string>
+
     <string name="hotel_1_address">Parco Federico Fellini</string>
     <string name="hotel_2_address">Viale Vespucci 20</string>
     <string name="hotel_3_address">Viale Vespucci 16</string>
@@ -71,12 +93,12 @@
     <string name="hotel_5_address">Viale Vespucci 3</string>
     <string name="hotel_6_address">Viale Regina Elena 28</string>
 
-    <string name="hotel_1_description">A symbol of the sweet life and, above all, the place of Fellini\'s imagination: the five-star Grand Hotel Rimini has always been a myth of holiday resorts. You too can become part of the legend. Grand Hotel Rimini is a journey through time to discover a land with profound traditions and strong suggestions. Let yourself be fascinated by a beach holiday that, both in summer and out of season, can arouse rich emotions.</string>
-    <string name="hotel_2_description">Are you looking for a hotel in Rimini? Whatever the reason for your stay at Riviera Romagnola, whether it is a beach holiday or a business trip, by taking advantage of this Hotel Sporting offer at the best price you will be able to enjoy all the comforts of the Sporting hotel at the cheapest price available.</string>
+    <string name="hotel_1_description">A symbol of the sweet life and, above all, the place of Fellini\'s imagination: the 5-star Grand Hotel Rimini has always been a myth of holiday resorts. You too can become part of the legend. Grand Hotel Rimini is a journey through time to discover a land with profound traditions and strong suggestions. Let yourself be fascinated by a beach holiday that, both in summer and out of season, can arouse rich emotions.</string>
+    <string name="hotel_2_description">Are you looking for a hotel in Rimini? Whatever the reason for your stay at Riviera Romagnola, whether it is a beach holiday or a business trip, by taking advantage of this 4-star offer at the best price you will be able to enjoy all the comforts of the Sporting hotel at the cheapest price available.</string>
     <string name="hotel_3_description">Around you elegance, refinement, and the uniqueness of a 4-star hotel experience. In front, only the sea. Rimini, in Marina Centro, imagines a place for relaxing and tasting moments, in a wellness break with the view of the sea, all in a single 5-floors environment. When a hotel becomes a fascinating experience.</string>
     <string name="hotel_4_description">At the 4-star Hotel Ambasciatori, tradition has always married elegance for a quality welcome characterized by style and class. Hotel Ambasciatori is among the most popular hotels in Rimini: for business trips, corporate meetings, relaxing weekends or splendid seaside holidays!</string>
-    <string name="hotel_5_description">In the heart of Rimini\'s Marina Centro there is an ancient jewel, a historic residence that has welcomed its guests since 1880 in an atmosphere of ancient elegance. Hotel Villa Adriatica in Rimini has seen the city change face and become one of the best known and loved tourist destinations for those who want a seaside stay full of services.</string>
-    <string name="hotel_6_description">A new concept of boutique hotel in Rimini, a design object, a wonderful architecture. A unique, unusual and disruptive place, where time expands into precious eternal moments to dedicate to self-care, to small things, to scents, to sensations.</string>
+    <string name="hotel_5_description">In the heart of Rimini\'s Marina Centro there is an ancient jewel, a 4-star historic residence that has welcomed its guests since 1880 in an atmosphere of ancient elegance. Hotel Villa Adriatica in Rimini has seen the city change face and become one of the best known and loved tourist destinations for those who want a seaside stay full of services.</string>
+    <string name="hotel_6_description">A new concept of boutique hotel in Rimini, a design object, a wonderful architecture. A unique, unusual and disruptive place, where time expands into precious eternal moments to dedicate to self-care, to small things, to scents, to sensations. The 5-star modern hotel in Rimini.</string>
 
 
 
@@ -87,6 +109,12 @@
     <string name="beach_3_name">Rimini Dog No Problem</string>
     <string name="beach_4_name">Bagni Ricci</string>
     <string name="beach_5_name">Turquoise Beach Club</string>
+
+    <string name="beach_1_rate">4.4</string>
+    <string name="beach_2_rate">4.5</string>
+    <string name="beach_3_rate">4.4</string>
+    <string name="beach_4_rate">4.5</string>
+    <string name="beach_5_rate">3.8</string>
 
     <string name="beach_1_address">Lungomare Tintori 30A</string>
     <string name="beach_2_address">Lungomare Di Vittorio 8B</string>
@@ -110,6 +138,13 @@
     <string name="entertainment_4_name">Altromondo</string>
     <string name="entertainment_5_name">Boabay</string>
     <string name="entertainment_6_name">Fiabilandia</string>
+
+    <string name="entertainment_1_rate">3.7</string>
+    <string name="entertainment_2_rate">3.8</string>
+    <string name="entertainment_3_rate">4.4</string>
+    <string name="entertainment_4_rate">4.2</string>
+    <string name="entertainment_5_rate">4.0</string>
+    <string name="entertainment_6_rate">4.1</string>
 
     <string name="entertainment_1_address">Lungomare Tintori 5</string>
     <string name="entertainment_2_address">Via Brindisi 20</string>
@@ -136,6 +171,14 @@
     <string name="culture_5_name">Vecchia Pescheria</string>
     <string name="culture_6_name">Domus del Chirurgo</string>
     <string name="culture_7_name">Fellini Museum</string>
+
+    <string name="culture_1_rate">4.6</string>
+    <string name="culture_2_rate">4.9</string>
+    <string name="culture_3_rate">4.6</string>
+    <string name="culture_4_rate">4.6</string>
+    <string name="culture_5_rate">4.6</string>
+    <string name="culture_6_rate">4.5</string>
+    <string name="culture_7_rate">4.6</string>
 
     <string name="culture_1_address">Corso D\'Augusto</string>
     <string name="culture_2_address">Corso D\'Augusto</string>
