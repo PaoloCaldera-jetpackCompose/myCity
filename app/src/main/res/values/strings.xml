@@ -3,6 +3,25 @@
     <string name="general_address">%s Rimini, Italy</string>
 
 
+
+    <!-- Categories -->
+
+    <string name="category_1_name">Lunch &amp; Dinner</string>
+    <string name="category_2_name">Breakfast</string>
+    <string name="category_3_name">Accommodation</string>
+    <string name="category_4_name">Beach</string>
+    <string name="category_5_name">Entertainment</string>
+    <string name="category_6_name">Culture</string>
+
+    <string name="category_1_description">Restaurants where to enjoy lunches and dinners.</string>
+    <string name="category_2_description">Bars and Coffee shops where to have breakfast.</string>
+    <string name="category_3_description">Hotels where to best enjoy your stay at the beach.</string>
+    <string name="category_4_description">Best beaches where to find all the services needed for your experience.</string>
+    <string name="category_5_description">Have fun in the city, for all the ages.</string>
+    <string name="category_6_description">A cultural trip from the past Roman Empire to our present days.</string>
+
+
+
     <!-- LUNCH AND DINNER -->
 
     <string name="restaurant_1_name">La mi mama</string>
