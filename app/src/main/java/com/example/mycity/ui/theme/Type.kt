@@ -25,13 +25,13 @@ val Typography = Typography(
     bodyMedium = TextStyle(
         fontFamily = Dosis,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontSize = 20.sp
     ),
 
     labelSmall = TextStyle(
         fontFamily = Dosis,
         fontWeight = FontWeight.ExtraLight,
-        fontSize = 12.sp
+        fontSize = 16.sp
     )
     /* Other default text styles to override
     titleLarge = TextStyle(
