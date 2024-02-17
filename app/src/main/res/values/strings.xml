@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Rimini</string>
+    <string name="general_address">%s Rimini, Italy</string>
 
 
     <!-- LUNCH AND DINNER -->
@@ -22,14 +23,14 @@
     <string name="restaurant_7_rate">4.1</string>
     <string name="restaurant_8_rate">4.4</string>
 
-    <string name="restaurant_1_address">Via Poletti 32</string>
-    <string name="restaurant_2_address">Piazza Teatini 3</string>
-    <string name="restaurant_3_address">Viale Antonio Beccadelli 15</string>
-    <string name="restaurant_4_address">Via Covignano 96</string>
-    <string name="restaurant_5_address">Viale Vespucci 63</string>
-    <string name="restaurant_6_address">Via Flaminia 175</string>
-    <string name="restaurant_7_address">Lungomare Tintori 5A</string>
-    <string name="restaurant_8_address">Viale Vespucci 85</string>
+    <string name="restaurant_1_address">Via Poletti 32, 47923</string>
+    <string name="restaurant_2_address">Piazza Teatini 3, 47921</string>
+    <string name="restaurant_3_address">Viale Beccadelli 15, 47921</string>
+    <string name="restaurant_4_address">Via Covignano 96, 47923</string>
+    <string name="restaurant_5_address">Viale Vespucci 63, 47921</string>
+    <string name="restaurant_6_address">Via Flaminia 175, 47923</string>
+    <string name="restaurant_7_address">Lungomare Tintori 5A, 47921</string>
+    <string name="restaurant_8_address">Viale Vespucci 85, 47921</string>
 
     <string name="restaurant_1_description">La Mi Mama is the ideal place to experience relaxing moments, discovering the flavors and aromas of the ancient Romagna tradition. The fascinating bright space, the soft lights, the warm colours, the flowers, the furnishings, the sober accessories and the showcases full of fine wines, from the most renowned local and national companies, blend together giving diners a warm and particular atmosphere.</string>
     <string name="restaurant_2_description">Very cute and welcoming place with warm lights that make you feel at home. Excellent product quality, impeccable service, great friendliness and kindness, fair prices.</string>
@@ -56,11 +57,11 @@
     <string name="breakfast_4_rate">4.3</string>
     <string name="breakfast_5_rate">4.3</string>
 
-    <string name="breakfast_1_address">Viale Vespucci 8</string>
-    <string name="breakfast_2_address">Viale Vespucci 3/A</string>
-    <string name="breakfast_3_address">Corso D\'Augusto 222</string>
-    <string name="breakfast_4_address">Piazza Cavour 12</string>
-    <string name="breakfast_5_address">Viale Vespucci 33</string>
+    <string name="breakfast_1_address">Viale Vespucci 8, 47921</string>
+    <string name="breakfast_2_address">Viale Vespucci 3/A, 47921</string>
+    <string name="breakfast_3_address">Corso D\'Augusto 222, 47921</string>
+    <string name="breakfast_4_address">Piazza Cavour 12, 47921</string>
+    <string name="breakfast_5_address">Viale Vespucci 33, 47921</string>
 
     <string name="breakfast_1_description">In just a few years, Roberto Rinaldini has been able to create an absolutely original, glamorous and elegant style, which stands out for his frequent "forays" into the fascinating world of fashion. A world he has always loved and from which he has been able to "steal" attention to detail and the search for stylistic perfection. Each of his desserts is conceived as a work in itself, a sartorial masterpiece whose basis, however, always remains the stubborn search for 360-degree quality: from the selection of raw materials to the processing techniques, up to the choice of packaging and sales environments.</string>
     <string name="breakfast_2_description">With a consolidated presence in various countries, Caffè Pascucci represents Italian excellence in the world of coffee. If your dream is to have your own coffee shop and pursue quality, our formats are for you. For generations, Pascucci has been dedicated to creating unique experiences through coffee. Our passion for the art of coffee and commitment to sustainability make us a distinctive brand on the international scene.</string>
@@ -86,12 +87,12 @@
     <string name="hotel_5_rate">4.5</string>
     <string name="hotel_6_rate">5.0</string>
 
-    <string name="hotel_1_address">Parco Federico Fellini</string>
-    <string name="hotel_2_address">Viale Vespucci 20</string>
-    <string name="hotel_3_address">Viale Vespucci 16</string>
-    <string name="hotel_4_address">Viale Vespucci 22</string>
-    <string name="hotel_5_address">Viale Vespucci 3</string>
-    <string name="hotel_6_address">Viale Regina Elena 28</string>
+    <string name="hotel_1_address">Parco Federico Fellini, 47921</string>
+    <string name="hotel_2_address">Viale Vespucci 20, 47921</string>
+    <string name="hotel_3_address">Viale Vespucci 16, 47921</string>
+    <string name="hotel_4_address">Viale Vespucci 22, 47921</string>
+    <string name="hotel_5_address">Viale Vespucci 3, 47921</string>
+    <string name="hotel_6_address">Viale Regina Elena 28, 47921</string>
 
     <string name="hotel_1_description">A symbol of the sweet life and, above all, the place of Fellini\'s imagination: the 5-star Grand Hotel Rimini has always been a myth of holiday resorts. You too can become part of the legend. Grand Hotel Rimini is a journey through time to discover a land with profound traditions and strong suggestions. Let yourself be fascinated by a beach holiday that, both in summer and out of season, can arouse rich emotions.</string>
     <string name="hotel_2_description">Are you looking for a hotel in Rimini? Whatever the reason for your stay at Riviera Romagnola, whether it is a beach holiday or a business trip, by taking advantage of this 4-star offer at the best price you will be able to enjoy all the comforts of the Sporting hotel at the cheapest price available.</string>
@@ -116,11 +117,11 @@
     <string name="beach_4_rate">4.5</string>
     <string name="beach_5_rate">4.6</string>
 
-    <string name="beach_1_address">Lungomare Tintori 30A</string>
-    <string name="beach_2_address">Lungomare Di Vittorio 8B</string>
-    <string name="beach_3_address">Lungomare Di Vittorio 28A</string>
-    <string name="beach_4_address">Lungomare Spadazzi 141–143</string>
-    <string name="beach_5_address">Lungomare Murri 8</string>
+    <string name="beach_1_address">Lungomare Tintori 30A, 47921</string>
+    <string name="beach_2_address">Lungomare Di Vittorio 8B, 47921</string>
+    <string name="beach_3_address">Lungomare Di Vittorio 28A, 47924</string>
+    <string name="beach_4_address">Lungomare Spadazzi 141–143, 47924</string>
+    <string name="beach_5_address">Lungomare Murri 8, 47921</string>
 
     <string name="beach_1_description">In the heart of Riviera Romagnola, you will find friendliness, high quality services and lots of comfort. Like every year, we are the favorite destination for people who want to spend entire days of sun and sea in the name of relaxation.</string>
     <string name="beach_2_description">With approximately 25 thousand square-meters of extension, Libra Beach is one of the largest and most innovative beaches in the entire Riviera Romagnola; it also has an area reserved for suites widely spaced apart, to relax in complete peace. The animation staff takes care of the children\'s entertainment in the Baby Park. The offer of high quality services is completed with the two chiringuitos by the sea (Kokale 63 and Maina), the Gym, the Nautical Center and the Swimming School.</string>
@@ -146,12 +147,12 @@
     <string name="entertainment_5_rate">4.0</string>
     <string name="entertainment_6_rate">4.1</string>
 
-    <string name="entertainment_1_address">Lungomare Tintori 5</string>
-    <string name="entertainment_2_address">Via Brindisi 20</string>
-    <string name="entertainment_3_address">Lungomare Tintori 6</string>
-    <string name="entertainment_4_address">Via Flaminia 358</string>
-    <string name="entertainment_5_address">Via Delle Officine 24</string>
-    <string name="entertainment_6_address">Via Cardano 15</string>
+    <string name="entertainment_1_address">Lungomare Tintori 5, 47921</string>
+    <string name="entertainment_2_address">Via Brindisi 20, 47924</string>
+    <string name="entertainment_3_address">Lungomare Tintori 6, 47921</string>
+    <string name="entertainment_4_address">Via Flaminia 358, 47924</string>
+    <string name="entertainment_5_address">Via Delle Officine 24, 47923</string>
+    <string name="entertainment_6_address">Via Cardano 15, 47924</string>
 
     <string name="entertainment_1_description">Coconuts is the right place to spend a special evening in company with your friends. The disco is open all year round, in winter there is dancing in the internal rooms, while in summer the events move to the Rimini seafront, a few steps from the beach.</string>
     <string name="entertainment_2_description">The Carnaby Club is a historic 3-floors disco in Rimini that inaugurated its floors in 1968. In its history, it has gone through all the fashions, following musical evolution and always confirming itself as the protagonist of the coastal nights. Despite its longevity, however, it has never lost its freshness, nor has it ever changed the values it believes in: it has always remained faithful to its identity as a friendly, strongly international place, made up of people, smiles, enthusiasm, and dedicated to clean fun.</string>
@@ -180,13 +181,13 @@
     <string name="culture_6_rate">4.5</string>
     <string name="culture_7_rate">4.6</string>
 
-    <string name="culture_1_address">Corso D\'Augusto</string>
-    <string name="culture_2_address">Corso D\'Augusto</string>
-    <string name="culture_3_address">Via IV Novembre 35</string>
-    <string name="culture_4_address">Piazza Malatesta</string>
-    <string name="culture_5_address">Piazza Cavour</string>
-    <string name="culture_6_address">Piazza Ferrari</string>
-    <string name="culture_7_address">Piazza Malatesta</string>
+    <string name="culture_1_address">Corso D\'Augusto, 47921</string>
+    <string name="culture_2_address">Corso D\'Augusto, 47921</string>
+    <string name="culture_3_address">Via IV Novembre 35, 47921</string>
+    <string name="culture_4_address">Piazza Malatesta, 47923</string>
+    <string name="culture_5_address">Piazza Cavour, 47921</string>
+    <string name="culture_6_address">Piazza Ferrari, 47921</string>
+    <string name="culture_7_address">Piazza Malatesta, 47923</string>
 
     <string name="culture_1_description">Built in 27 BC with Istrian stone, in honor of Caesar Octavian Augustus, it is the oldest of the surviving Roman arches and stands at the arrival point of the Via Flaminia (which connected Rome to Rimini). The architecture is enhanced by a rich decorative apparatus, full of political and propagandistic meanings. The opening of the fornix, so wide that it could not be closed by doors, recalled the peace achieved after a long period of civil wars.</string>
     <string name="culture_2_description">An imposing architectural work from the Roman era, the bridge was built over the Marecchia river by decree of the Emperor Augustus and its completion is due to his successor Tiberius (14–21 AD). Made of Istrian stone, with five arches, in Doric style, it represents one of the most notable surviving Roman bridges. The bridge marks the beginning of the consular streets, Emilia and Popilia, heading to the North and is located at the end of the main historic street of the city, Corso D\'Augusto.</string>
