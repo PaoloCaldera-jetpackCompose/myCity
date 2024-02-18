@@ -24,10 +24,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.mycity.R
+import com.example.mycity.model.Entry
 import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
-fun DetailsScreen(modifier: Modifier = Modifier) {
+fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
@@ -36,7 +37,7 @@ fun DetailsScreen(modifier: Modifier = Modifier) {
     ) {
         Card {
             Image(
-                painter = painterResource(R.drawable.breakfast_1_image),
+                painter = painterResource(entry.image),
                 contentDescription = null,
                 contentScale = ContentScale.FillWidth,
                 modifier = Modifier.fillMaxWidth()
@@ -50,7 +51,7 @@ fun DetailsScreen(modifier: Modifier = Modifier) {
                 .verticalScroll(rememberScrollState())
         ) {
             Text(
-                text = stringResource(R.string.breakfast_1_description),
+                text = stringResource(entry.description),
                 textAlign = TextAlign.Justify,
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
@@ -62,7 +63,7 @@ fun DetailsScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = stringResource(R.string.general_address, stringResource(R.string.breakfast_1_address)),
+                text = stringResource(R.string.general_address, stringResource(entry.address)),
                 textAlign = TextAlign.Center,
                 style = MaterialTheme.typography.labelSmall,
                 modifier = Modifier
@@ -77,6 +78,15 @@ fun DetailsScreen(modifier: Modifier = Modifier) {
 @Composable
 fun DetailsScreenPreview() {
     MyCityTheme {
-        DetailsScreen()
+        DetailsScreen(
+            entry = Entry(
+                id = 31,
+                name = R.string.beach_3_name,
+                rate = R.string.beach_3_rate,
+                address = R.string.beach_3_address,
+                description = R.string.beach_3_description,
+                image = R.drawable.beach_3_image,
+            )
+        )
     }
 }
