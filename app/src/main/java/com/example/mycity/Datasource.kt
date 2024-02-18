@@ -8,32 +8,38 @@ object Datasource {
         Category(
             id = 1,
             name = R.string.category_1_name,
-            description = R.string.category_1_description
+            description = R.string.category_1_description,
+            image = R.drawable.ic_restaurant
         ),
         Category(
             id = 2,
             name = R.string.category_2_name,
-            description = R.string.category_2_description
+            description = R.string.category_2_description,
+            image = R.drawable.ic_breakfast
         ),
         Category(
             id = 3,
             name = R.string.category_3_name,
-            description = R.string.category_3_description
+            description = R.string.category_3_description,
+            image = R.drawable.ic_hotel
         ),
         Category(
             id = 4,
             name = R.string.category_4_name,
-            description = R.string.category_4_description
+            description = R.string.category_4_description,
+            image = R.drawable.ic_beach
         ),
         Category(
             id = 5,
             name = R.string.category_5_name,
-            description = R.string.category_5_description
+            description = R.string.category_5_description,
+            image = R.drawable.ic_entertainment
         ),
         Category(
             id = 6,
             name = R.string.category_6_name,
-            description = R.string.category_6_description
+            description = R.string.category_6_description,
+            image = R.drawable.ic_culture
         )
     )
 
