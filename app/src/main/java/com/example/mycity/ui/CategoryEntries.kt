@@ -35,7 +35,9 @@ import com.example.mycity.ui.theme.MyCityTheme
 fun CategoryEntriesScreen(entries: List<Entry>, modifier: Modifier = Modifier) {
     LazyColumn(
         verticalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(8.dp)
     ) {
         items(entries) {
             CategoryEntryItem(entry = it, modifier = modifier)
@@ -97,23 +99,6 @@ fun CategoryEntriesScreenPreview() {
     MyCityTheme {
         CategoryEntriesScreen(
             entries = Datasource.getEntries(1)
-        )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun CategoryEntryItemPreview() {
-    MyCityTheme {
-        CategoryEntryItem(
-            entry = Entry(
-                id = 31,
-                name = R.string.beach_3_name,
-                rate = R.string.beach_3_rate,
-                address = R.string.beach_3_address,
-                description = R.string.beach_3_description,
-                image = R.drawable.beach_3_image,
-            ),
         )
     }
 }
