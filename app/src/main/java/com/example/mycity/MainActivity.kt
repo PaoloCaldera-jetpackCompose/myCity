@@ -27,6 +27,7 @@ import com.example.mycity.data.Datasource
 import com.example.mycity.model.MyCityScreen
 import com.example.mycity.model.UiState
 import com.example.mycity.ui.CategoriesScreen
+import com.example.mycity.ui.CategoryEntriesScreen
 import com.example.mycity.ui.WelcomeScreen
 import com.example.mycity.ui.theme.MyCityTheme
 import com.example.mycity.viewmodel.MyCityViewModel
@@ -107,7 +108,15 @@ fun MyCityCompact(
                     .padding(paddingValues)
             )
         }
-        MyCityScreen.Entries -> {}
+        MyCityScreen.Entries -> {
+            CategoryEntriesScreen(
+                entries = Datasource.getEntries(uiState.selectedCategory.id),
+                onClick = { viewModel.updateSelectedEntry(it) },
+                modifier = modifier
+                    .fillMaxSize()
+                    .padding(paddingValues)
+            )
+        }
         MyCityScreen.Details -> {}
     }
 }

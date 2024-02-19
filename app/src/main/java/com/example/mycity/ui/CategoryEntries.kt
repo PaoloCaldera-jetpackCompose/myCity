@@ -1,10 +1,12 @@
 package com.example.mycity.ui
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -33,25 +35,35 @@ import com.example.mycity.model.Entry
 import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
-fun CategoryEntriesScreen(entries: List<Entry>, modifier: Modifier = Modifier) {
+fun CategoryEntriesScreen(
+    entries: List<Entry>,
+    onClick: (Entry) -> Unit,
+    modifier: Modifier = Modifier) {
     LazyColumn(
         verticalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(8.dp)
+        modifier = modifier
     ) {
         items(entries) {
-            CategoryEntryItem(entry = it, modifier = modifier)
+            CategoryEntryItem(
+                entry = it,
+                onClick = onClick,
+                modifier = modifier
+            )
         }
     }
 }
 
 @Composable
-fun CategoryEntryItem(entry: Entry, modifier: Modifier = Modifier) {
+fun CategoryEntryItem(
+    entry: Entry,
+    onClick: (Entry) -> Unit,
+    modifier: Modifier = Modifier
+) {
     Card(
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
         modifier = Modifier
             .height(128.dp)
+            .clickable { onClick(entry) }
     ) {
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -101,7 +113,9 @@ fun CategoryEntryItem(entry: Entry, modifier: Modifier = Modifier) {
 fun CategoryEntriesScreenPreview() {
     MyCityTheme {
         CategoryEntriesScreen(
-            entries = Datasource.getEntries(1)
+            entries = Datasource.getEntries(1),
+            onClick = {},
+            modifier = Modifier.fillMaxSize().padding(8.dp)
         )
     }
 }
