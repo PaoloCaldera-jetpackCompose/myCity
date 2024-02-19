@@ -1,5 +1,6 @@
 package com.example.mycity.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -28,28 +29,33 @@ import com.example.mycity.model.Category
 import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
-fun CategoriesScreen(categories: List<Category>, modifier: Modifier = Modifier) {
+fun CategoriesScreen(
+    categories: List<Category>,
+    onClick: (Category) -> Unit,
+    modifier: Modifier = Modifier) {
     LazyVerticalGrid(
         columns = GridCells.FixedSize(160.dp),
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalArrangement = Arrangement.SpaceEvenly,
         modifier = modifier
-            .fillMaxSize()
-            .padding(8.dp)
     ) {
         items(categories) {
-            CategoryItem(it)
+            CategoryItem(category = it, onClick = onClick)
         }
     }
 }
 
 @Composable
-fun CategoryItem(category: Category, modifier: Modifier = Modifier) {
+fun CategoryItem(
+    category: Category,
+    onClick: (Category) -> Unit,
+    modifier: Modifier = Modifier) {
     Card(
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
         modifier = Modifier
             .size(160.dp)
+            .clickable { onClick(category) }
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -71,6 +77,12 @@ fun CategoryItem(category: Category, modifier: Modifier = Modifier) {
 @Composable
 fun CategoriesScreenPreview() {
     MyCityTheme {
-        CategoriesScreen(categories = Datasource.getCategories())
+        CategoriesScreen(
+            categories = Datasource.getCategories(),
+            onClick = {},
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
+        )
     }
 }

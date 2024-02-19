@@ -23,8 +23,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.mycity.data.Datasource
 import com.example.mycity.model.MyCityScreen
 import com.example.mycity.model.UiState
+import com.example.mycity.ui.CategoriesScreen
 import com.example.mycity.ui.WelcomeScreen
 import com.example.mycity.ui.theme.MyCityTheme
 import com.example.mycity.viewmodel.MyCityViewModel
@@ -97,7 +99,13 @@ fun MyCityCompact(
             )
         }
         MyCityScreen.Categories -> {
-
+            CategoriesScreen(
+                categories = Datasource.getCategories(),
+                onClick = { viewModel.updateSelectedCategory(it) },
+                modifier = modifier
+                    .fillMaxSize()
+                    .padding(paddingValues)
+            )
         }
         MyCityScreen.Entries -> {}
         MyCityScreen.Details -> {}

@@ -3,6 +3,7 @@ package com.example.mycity.viewmodel
 import androidx.lifecycle.ViewModel
 import com.example.mycity.data.Datasource
 import com.example.mycity.model.Category
+import com.example.mycity.model.Entry
 import com.example.mycity.model.MyCityScreen
 import com.example.mycity.model.UiState
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -32,8 +33,17 @@ class MyCityViewModel: ViewModel() {
         _uiState.value = UiState(
             selectedCategory = category,
             selectedEntry = Datasource.getEntries(category.id)[0],
-            selectedScreen = MyCityScreen.Categories
+            selectedScreen = MyCityScreen.Entries
         )
+    }
+
+    fun updateSelectedEntry(entry: Entry) {
+        _uiState.update {
+            it.copy(
+                selectedEntry = entry,
+                selectedScreen = MyCityScreen.Details
+            )
+        }
     }
 
 }
