@@ -3,10 +3,8 @@ package com.example.mycity.ui
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -32,10 +30,13 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
-            .padding(8.dp)
             .fillMaxSize()
+            .padding(4.dp)
     ) {
-        Card {
+        Card(
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            modifier = Modifier.padding(4.dp)
+        ) {
             Image(
                 painter = painterResource(entry.image),
                 contentDescription = null,
@@ -43,12 +44,12 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
                 modifier = Modifier.fillMaxWidth()
             )
         }
-        Spacer(modifier = Modifier.height(8.dp))
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
             modifier = Modifier
                 .weight(1f)
                 .verticalScroll(rememberScrollState())
+                .padding(4.dp)
         ) {
             Text(
                 text = stringResource(entry.description),
@@ -57,10 +58,10 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
             )
         }
-        Spacer(modifier = Modifier.height(8.dp))
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
-            modifier = Modifier.fillMaxWidth()
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            modifier = Modifier.fillMaxWidth().padding(4.dp)
         ) {
             Text(
                 text = stringResource(R.string.general_address, stringResource(entry.address)),

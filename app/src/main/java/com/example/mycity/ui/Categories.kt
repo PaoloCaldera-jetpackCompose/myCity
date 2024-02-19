@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -32,7 +33,7 @@ fun CategoriesScreen(categories: List<Category>, modifier: Modifier = Modifier) 
     LazyVerticalGrid(
         columns = GridCells.FixedSize(160.dp),
         horizontalArrangement = Arrangement.SpaceEvenly,
-        verticalArrangement = Arrangement.spacedBy(32.dp),
+        verticalArrangement = Arrangement.SpaceEvenly,
         modifier = modifier
             .fillMaxSize()
             .padding(8.dp)
@@ -46,9 +47,10 @@ fun CategoriesScreen(categories: List<Category>, modifier: Modifier = Modifier) 
 @Composable
 fun CategoryItem(category: Category, modifier: Modifier = Modifier) {
     Card(
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
         modifier = Modifier
             .size(160.dp)
-            .padding(8.dp)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -66,22 +68,7 @@ fun CategoryItem(category: Category, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
-@Composable
-fun CategoryItemPreview() {
-    MyCityTheme {
-        CategoryItem(
-            category = Category(
-                id = 6,
-                name = R.string.category_6_name,
-                description = R.string.category_6_description,
-                image = R.drawable.ic_culture
-            )
-        )
-    }
-}
-
-@Preview(widthDp = 400)
+@Preview(widthDp = 400, showBackground = true)
 @Composable
 fun CategoriesScreenPreview() {
     MyCityTheme {
