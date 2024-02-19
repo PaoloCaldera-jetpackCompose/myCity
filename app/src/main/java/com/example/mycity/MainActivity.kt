@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -28,6 +27,7 @@ import com.example.mycity.model.MyCityScreen
 import com.example.mycity.model.UiState
 import com.example.mycity.ui.CategoriesScreen
 import com.example.mycity.ui.CategoryEntriesScreen
+import com.example.mycity.ui.DetailsScreen
 import com.example.mycity.ui.WelcomeScreen
 import com.example.mycity.ui.theme.MyCityTheme
 import com.example.mycity.viewmodel.MyCityViewModel
@@ -74,7 +74,11 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
         }
         when (widthSizeClass) {
             WindowWidthSizeClass.Compact -> {
-                MyCityCompact(uiState = uiState, viewModel = viewModel, paddingValues = it)
+                MyCityCompact(
+                    uiState = uiState,
+                    viewModel = viewModel,
+                    modifier = modifier.fillMaxSize().padding(it)
+                )
             }
             WindowWidthSizeClass.Medium -> {}
             WindowWidthSizeClass.Expanded -> {}
@@ -87,7 +91,6 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
 fun MyCityCompact(
     uiState: UiState,
     viewModel: MyCityViewModel,
-    paddingValues: PaddingValues,
     modifier: Modifier = Modifier
 ) {
     when (uiState.selectedScreen) {
@@ -95,8 +98,6 @@ fun MyCityCompact(
             WelcomeScreen(
                 onClick = { viewModel.updateSelectedScreen(MyCityScreen.Categories) },
                 modifier = modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
             )
         }
         MyCityScreen.Categories -> {
@@ -104,8 +105,6 @@ fun MyCityCompact(
                 categories = Datasource.getCategories(),
                 onClick = { viewModel.updateSelectedCategory(it) },
                 modifier = modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
             )
         }
         MyCityScreen.Entries -> {
@@ -113,11 +112,14 @@ fun MyCityCompact(
                 entries = Datasource.getEntries(uiState.selectedCategory.id),
                 onClick = { viewModel.updateSelectedEntry(it) },
                 modifier = modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
             )
         }
-        MyCityScreen.Details -> {}
+        MyCityScreen.Details -> {
+            DetailsScreen(
+                entry = uiState.selectedEntry,
+                modifier = modifier
+            )
+        }
     }
 }
 

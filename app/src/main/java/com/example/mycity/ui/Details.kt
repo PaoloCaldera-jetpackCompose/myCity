@@ -29,13 +29,11 @@ import com.example.mycity.ui.theme.MyCityTheme
 fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(4.dp)
+        modifier = modifier
     ) {
         Card(
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-            modifier = Modifier.padding(4.dp)
+            modifier = Modifier.padding(bottom = 8.dp)
         ) {
             Image(
                 painter = painterResource(entry.image),
@@ -49,7 +47,6 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
             modifier = Modifier
                 .weight(1f)
                 .verticalScroll(rememberScrollState())
-                .padding(4.dp)
         ) {
             Text(
                 text = stringResource(entry.description),
@@ -61,7 +58,7 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-            modifier = Modifier.fillMaxWidth().padding(4.dp)
+            modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
         ) {
             Text(
                 text = stringResource(R.string.general_address, stringResource(entry.address)),
@@ -87,7 +84,8 @@ fun DetailsScreenPreview() {
                 address = R.string.beach_3_address,
                 description = R.string.beach_3_description,
                 image = R.drawable.beach_3_image,
-            )
+            ),
+            modifier = Modifier.fillMaxSize().padding(8.dp)
         )
     }
 }
