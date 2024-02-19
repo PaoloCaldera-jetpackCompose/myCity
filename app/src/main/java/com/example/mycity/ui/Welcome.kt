@@ -3,7 +3,6 @@ package com.example.mycity.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -26,13 +25,14 @@ import com.example.mycity.R
 import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
-fun WelcomeScreen(paddingValues: PaddingValues, modifier: Modifier = Modifier) {
+fun WelcomeScreen(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier
-            .padding(paddingValues)
-            .fillMaxSize()
+        modifier = modifier
     ) {
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
@@ -54,7 +54,7 @@ fun WelcomeScreen(paddingValues: PaddingValues, modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(64.dp))
         Button(
             elevation = ButtonDefaults.buttonElevation(defaultElevation = 8.dp),
-            onClick = { /*TODO*/ }
+            onClick = onClick
         ) {
             Text(
                 text = stringResource(R.string.start_exploring),
@@ -69,6 +69,6 @@ fun WelcomeScreen(paddingValues: PaddingValues, modifier: Modifier = Modifier) {
 @Composable
 fun WelcomeScreenPreview() {
     MyCityTheme {
-        WelcomeScreen(PaddingValues(8.dp))
+        WelcomeScreen({}, Modifier.fillMaxSize().padding(8.dp))
     }
 }
