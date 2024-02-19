@@ -1,5 +1,6 @@
-package com.example.mycity
+package com.example.mycity.data
 
+import com.example.mycity.R
 import com.example.mycity.model.Category
 import com.example.mycity.model.Entry
 
