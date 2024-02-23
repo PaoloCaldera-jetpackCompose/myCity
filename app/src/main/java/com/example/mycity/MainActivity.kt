@@ -1,5 +1,6 @@
 package com.example.mycity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,7 +9,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
@@ -21,14 +21,9 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mycity.data.Datasource
-import com.example.mycity.model.MyCityScreen
-import com.example.mycity.model.UiState
-import com.example.mycity.ui.CategoriesScreen
-import com.example.mycity.ui.CategoryEntriesScreen
-import com.example.mycity.ui.DetailsScreen
-import com.example.mycity.ui.WelcomeScreen
+import com.example.mycity.ui.MyCityCompact
 import com.example.mycity.ui.theme.MyCityTheme
 import com.example.mycity.viewmodel.MyCityViewModel
 
@@ -52,6 +47,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifier) {
 
@@ -59,74 +56,34 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
     val viewModel: MyCityViewModel = viewModel()
     val uiState by viewModel.uiState.collectAsState()
 
-    Scaffold(
-        topBar = { MyCityAppBar(widthSizeClass = widthSizeClass) }
-    ) {
-        Box(modifier = modifier.fillMaxSize()) {
-            Image(
-                painter = painterResource(R.drawable.main_background),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .alpha(0.10f)
-                    .matchParentSize()
+    Box(modifier = modifier.fillMaxSize()) {
+        Image(
+            painter = painterResource(R.drawable.main_background),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .alpha(0.10f)
+                .matchParentSize()
+        )
+    }
+
+    when (widthSizeClass) {
+        WindowWidthSizeClass.Compact -> {
+            MyCityCompact(
+                uiState = uiState,
+                viewModel = viewModel,
+                modifier = modifier
+                    .fillMaxSize()
+                    .padding(8.dp)
             )
         }
-        when (widthSizeClass) {
-            WindowWidthSizeClass.Compact -> {
-                MyCityCompact(
-                    uiState = uiState,
-                    viewModel = viewModel,
-                    modifier = modifier.fillMaxSize().padding(it)
-                )
-            }
-            WindowWidthSizeClass.Medium -> {}
-            WindowWidthSizeClass.Expanded -> {}
-            else -> {}
-        }
+
+        WindowWidthSizeClass.Medium -> {}
+        WindowWidthSizeClass.Expanded -> {}
+        else -> {}
     }
 }
 
-@Composable
-fun MyCityCompact(
-    uiState: UiState,
-    viewModel: MyCityViewModel,
-    modifier: Modifier = Modifier
-) {
-    when (uiState.selectedScreen) {
-        MyCityScreen.Welcome -> {
-            WelcomeScreen(
-                onClick = { viewModel.updateSelectedScreen(MyCityScreen.Categories) },
-                modifier = modifier
-            )
-        }
-        MyCityScreen.Categories -> {
-            CategoriesScreen(
-                categories = Datasource.getCategories(),
-                onClick = { viewModel.updateSelectedCategory(it) },
-                modifier = modifier
-            )
-        }
-        MyCityScreen.Entries -> {
-            CategoryEntriesScreen(
-                entries = Datasource.getEntries(uiState.selectedCategory.id),
-                onClick = { viewModel.updateSelectedEntry(it) },
-                modifier = modifier
-            )
-        }
-        MyCityScreen.Details -> {
-            DetailsScreen(
-                entry = uiState.selectedEntry,
-                modifier = modifier
-            )
-        }
-    }
-}
-
-@Composable
-fun MyCityAppBar(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifier) {
-    
-}
 
 
 @Preview(showBackground = true)
