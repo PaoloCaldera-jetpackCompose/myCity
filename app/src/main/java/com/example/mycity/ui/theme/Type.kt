@@ -16,6 +16,12 @@ val Dosis = FontFamily(
 
 // Set of Material typography styles to start with
 val Typography = Typography(
+    displaySmall = TextStyle(
+        fontFamily = Dosis,
+        fontWeight = FontWeight.Normal,
+        fontSize = 32.sp
+    ),
+
     titleLarge = TextStyle(
         fontFamily = Dosis,
         fontWeight = FontWeight.Bold,

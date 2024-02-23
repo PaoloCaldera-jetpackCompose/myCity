@@ -3,10 +3,8 @@ package com.example.mycity.ui
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -31,11 +29,12 @@ import com.example.mycity.ui.theme.MyCityTheme
 fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier
-            .padding(8.dp)
-            .fillMaxSize()
+        modifier = modifier
     ) {
-        Card {
+        Card(
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            modifier = Modifier.padding(bottom = 8.dp)
+        ) {
             Image(
                 painter = painterResource(entry.image),
                 contentDescription = null,
@@ -43,7 +42,6 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
                 modifier = Modifier.fillMaxWidth()
             )
         }
-        Spacer(modifier = Modifier.height(8.dp))
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
             modifier = Modifier
@@ -57,10 +55,10 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
             )
         }
-        Spacer(modifier = Modifier.height(8.dp))
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
-            modifier = Modifier.fillMaxWidth()
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
         ) {
             Text(
                 text = stringResource(R.string.general_address, stringResource(entry.address)),
@@ -86,7 +84,8 @@ fun DetailsScreenPreview() {
                 address = R.string.beach_3_address,
                 description = R.string.beach_3_description,
                 image = R.drawable.beach_3_image,
-            )
+            ),
+            modifier = Modifier.fillMaxSize().padding(8.dp)
         )
     }
 }

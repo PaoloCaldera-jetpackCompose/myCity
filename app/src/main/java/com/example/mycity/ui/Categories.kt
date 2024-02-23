@@ -1,5 +1,6 @@
 package com.example.mycity.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -11,6 +12,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -22,33 +24,38 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.mycity.Datasource
-import com.example.mycity.R
+import com.example.mycity.data.Datasource
 import com.example.mycity.model.Category
 import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
-fun CategoriesScreen(categories: List<Category>, modifier: Modifier = Modifier) {
+fun CategoriesScreen(
+    categories: List<Category>,
+    onClick: (Category) -> Unit,
+    modifier: Modifier = Modifier) {
     LazyVerticalGrid(
         columns = GridCells.FixedSize(160.dp),
         horizontalArrangement = Arrangement.SpaceEvenly,
-        verticalArrangement = Arrangement.spacedBy(32.dp),
+        verticalArrangement = Arrangement.SpaceEvenly,
         modifier = modifier
-            .fillMaxSize()
-            .padding(8.dp)
     ) {
         items(categories) {
-            CategoryItem(it)
+            CategoryItem(category = it, onClick = onClick)
         }
     }
 }
 
 @Composable
-fun CategoryItem(category: Category, modifier: Modifier = Modifier) {
+fun CategoryItem(
+    category: Category,
+    onClick: (Category) -> Unit,
+    modifier: Modifier = Modifier) {
     Card(
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
         modifier = Modifier
             .size(160.dp)
-            .padding(8.dp)
+            .clickable { onClick(category) }
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -66,25 +73,16 @@ fun CategoryItem(category: Category, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
-@Composable
-fun CategoryItemPreview() {
-    MyCityTheme {
-        CategoryItem(
-            category = Category(
-                id = 6,
-                name = R.string.category_6_name,
-                description = R.string.category_6_description,
-                image = R.drawable.ic_culture
-            )
-        )
-    }
-}
-
-@Preview(widthDp = 400)
+@Preview(widthDp = 400, showBackground = true)
 @Composable
 fun CategoriesScreenPreview() {
     MyCityTheme {
-        CategoriesScreen(categories = Datasource.getCategories())
+        CategoriesScreen(
+            categories = Datasource.getCategories(),
+            onClick = {},
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
+        )
     }
 }
