@@ -2,14 +2,19 @@ package com.example.mycity.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -35,12 +40,36 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
             modifier = Modifier.padding(bottom = 8.dp)
         ) {
-            Image(
-                painter = painterResource(entry.image),
-                contentDescription = null,
-                contentScale = ContentScale.FillWidth,
-                modifier = Modifier.fillMaxWidth()
-            )
+            Box(contentAlignment = Alignment.BottomStart) {
+                Image(
+                    painter = painterResource(entry.image),
+                    contentDescription = null,
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                Card(
+                    modifier = Modifier.padding(8.dp),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
+                ) {
+                    Row(
+                        modifier = Modifier.padding(8.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = stringResource(entry.rate),
+                            textAlign = TextAlign.Start,
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Icon(
+                            painter = painterResource(R.drawable.ic_star_rate),
+                            contentDescription = null
+                        )
+                    }
+                }
+            }
+
         }
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
@@ -58,7 +87,9 @@ fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-            modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 8.dp)
         ) {
             Text(
                 text = stringResource(R.string.general_address, stringResource(entry.address)),
@@ -85,7 +116,9 @@ fun DetailsScreenPreview() {
                 description = R.string.beach_3_description,
                 image = R.drawable.beach_3_image,
             ),
-            modifier = Modifier.fillMaxSize().padding(8.dp)
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
         )
     }
 }

@@ -2,6 +2,7 @@ package com.example.mycity.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -123,6 +124,7 @@ fun MyCityCompactAppBar(
                     contentDescription = stringResource(R.string.navigate_up_button)
                 )
             }
-        }
+        },
+        modifier = Modifier.fillMaxWidth()
     )
 }

@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.mycity.ui.MyCityCompact
+import com.example.mycity.ui.MyCityMedium
 import com.example.mycity.ui.theme.MyCityTheme
 import com.example.mycity.viewmodel.MyCityViewModel
 
@@ -78,7 +79,15 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
             )
         }
 
-        WindowWidthSizeClass.Medium -> {}
+        WindowWidthSizeClass.Medium -> {
+            MyCityMedium(
+                uiState = uiState,
+                viewModel = viewModel,
+                modifier = modifier
+                    .fillMaxSize()
+                    .padding(4.dp)
+            )
+        }
         WindowWidthSizeClass.Expanded -> {}
         else -> {}
     }
@@ -88,8 +97,16 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
 
 @Preview(showBackground = true)
 @Composable
-fun MyCityPreview() {
+fun MyCityCompactPreview() {
     MyCityTheme {
         MyCityApp(WindowWidthSizeClass.Compact)
+    }
+}
+
+@Preview(showBackground = true, widthDp = 700)
+@Composable
+fun MyCityMediumPreview() {
+    MyCityTheme {
+        MyCityApp(WindowWidthSizeClass.Medium)
     }
 }
