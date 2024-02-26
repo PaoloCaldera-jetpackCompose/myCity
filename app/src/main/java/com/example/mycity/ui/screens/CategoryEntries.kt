@@ -1,4 +1,4 @@
-package com.example.mycity.ui
+package com.example.mycity.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -13,12 +13,14 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -38,8 +40,10 @@ import com.example.mycity.ui.theme.MyCityTheme
 fun CategoryEntriesScreen(
     entries: List<Entry>,
     onClick: (Entry) -> Unit,
+    widthSizeClass: WindowWidthSizeClass,
     modifier: Modifier = Modifier) {
     LazyColumn(
+        state = rememberLazyListState(),
         verticalArrangement = Arrangement.spacedBy(8.dp),
         modifier = modifier
     ) {
@@ -47,7 +51,7 @@ fun CategoryEntriesScreen(
             CategoryEntryItem(
                 entry = it,
                 onClick = onClick,
-                modifier = modifier
+                widthSizeClass = widthSizeClass
             )
         }
     }
@@ -57,7 +61,7 @@ fun CategoryEntriesScreen(
 fun CategoryEntryItem(
     entry: Entry,
     onClick: (Entry) -> Unit,
-    modifier: Modifier = Modifier
+    widthSizeClass: WindowWidthSizeClass
 ) {
     Card(
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
@@ -96,14 +100,16 @@ fun CategoryEntryItem(
                     style = MaterialTheme.typography.labelSmall
                 )
             }
-            Image(
-                painter = painterResource(entry.image),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .clip(RoundedCornerShape(8.dp))
-                    .width(128.dp)
-            )
+            if (widthSizeClass != WindowWidthSizeClass.Expanded) {
+                Image(
+                    painter = painterResource(entry.image),
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .width(128.dp)
+                )
+            }
         }
     }
 }
@@ -115,7 +121,10 @@ fun CategoryEntriesScreenPreview() {
         CategoryEntriesScreen(
             entries = Datasource.getEntries(1),
             onClick = {},
-            modifier = Modifier.fillMaxSize().padding(8.dp)
+            widthSizeClass = WindowWidthSizeClass.Compact,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
         )
     }
 }

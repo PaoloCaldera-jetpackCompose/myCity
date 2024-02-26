@@ -1,4 +1,4 @@
-package com.example.mycity.ui
+package com.example.mycity.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
