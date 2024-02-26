@@ -22,6 +22,10 @@ import com.example.mycity.R
 import com.example.mycity.data.Datasource
 import com.example.mycity.model.MyCityScreen
 import com.example.mycity.model.UiState
+import com.example.mycity.ui.screens.CategoriesScreen
+import com.example.mycity.ui.screens.CategoryEntriesScreen
+import com.example.mycity.ui.screens.DetailsScreen
+import com.example.mycity.ui.screens.WelcomeScreen
 import com.example.mycity.viewmodel.MyCityViewModel
 
 @Composable

@@ -30,6 +30,9 @@ import com.example.mycity.data.Datasource
 import com.example.mycity.model.Category
 import com.example.mycity.model.MyCityScreen
 import com.example.mycity.model.UiState
+import com.example.mycity.ui.screens.CategoryEntriesScreen
+import com.example.mycity.ui.screens.DetailsScreen
+import com.example.mycity.ui.screens.WelcomeScreen
 import com.example.mycity.viewmodel.MyCityViewModel
 
 @Composable

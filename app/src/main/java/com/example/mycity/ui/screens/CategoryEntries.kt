@@ -1,4 +1,4 @@
-package com.example.mycity.ui
+package com.example.mycity.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -42,6 +43,7 @@ fun CategoryEntriesScreen(
     widthSizeClass: WindowWidthSizeClass,
     modifier: Modifier = Modifier) {
     LazyColumn(
+        state = rememberLazyListState(),
         verticalArrangement = Arrangement.spacedBy(8.dp),
         modifier = modifier
     ) {
@@ -120,7 +122,9 @@ fun CategoryEntriesScreenPreview() {
             entries = Datasource.getEntries(1),
             onClick = {},
             widthSizeClass = WindowWidthSizeClass.Compact,
-            modifier = Modifier.fillMaxSize().padding(8.dp)
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
         )
     }
 }
