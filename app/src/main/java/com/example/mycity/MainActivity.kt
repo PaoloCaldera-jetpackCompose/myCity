@@ -74,6 +74,7 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
             MyCityCompact(
                 uiState = uiState,
                 viewModel = viewModel,
+                widthSizeClass = widthSizeClass,
                 modifier = modifier
                     .fillMaxSize()
                     .padding(8.dp)
@@ -84,6 +85,7 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
             MyCityMedium(
                 uiState = uiState,
                 viewModel = viewModel,
+                widthSizeClass = widthSizeClass,
                 modifier = modifier
                     .fillMaxSize()
                     .padding(4.dp)
@@ -93,6 +95,7 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
             MyCityExpanded(
                 uiState = uiState,
                 viewModel = viewModel,
+                widthSizeClass = widthSizeClass,
                 modifier = modifier
                     .fillMaxSize()
                     .padding(4.dp)
@@ -103,6 +106,7 @@ fun MyCityApp(widthSizeClass: WindowWidthSizeClass, modifier: Modifier = Modifie
             MyCityCompact(
                 uiState = uiState,
                 viewModel = viewModel,
+                widthSizeClass = widthSizeClass,
                 modifier = modifier
                     .fillMaxSize()
                     .padding(8.dp)

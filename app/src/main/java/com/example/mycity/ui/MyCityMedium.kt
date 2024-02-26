@@ -17,6 +17,7 @@ import androidx.compose.material3.NavigationRail
 import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -35,6 +36,7 @@ import com.example.mycity.viewmodel.MyCityViewModel
 fun MyCityMedium(
     uiState: UiState,
     viewModel: MyCityViewModel,
+    widthSizeClass: WindowWidthSizeClass,
     modifier: Modifier = Modifier
 ) {
     Row {
@@ -60,6 +62,7 @@ fun MyCityMedium(
                     )
                     DetailsScreen(
                         entry = uiState.selectedEntry,
+                        widthSizeClass = widthSizeClass,
                         modifier = modifier.padding(4.dp)
                     )
                 }
@@ -75,6 +78,7 @@ fun MyCityMedium(
                     CategoryEntriesScreen(
                         entries = Datasource.getEntries(uiState.selectedCategory.id),
                         onClick = { viewModel.updateSelectedEntry(it) },
+                        widthSizeClass = widthSizeClass,
                         modifier = modifier.padding(4.dp)
                     )
                 }

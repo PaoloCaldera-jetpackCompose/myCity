@@ -17,6 +17,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -31,58 +32,82 @@ import com.example.mycity.model.Entry
 import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
-fun DetailsScreen(entry: Entry, modifier: Modifier = Modifier) {
+fun DetailsScreen(
+    entry: Entry,
+    widthSizeClass: WindowWidthSizeClass,
+    modifier: Modifier = Modifier
+) {
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
         modifier = modifier
     ) {
-        Card(
-            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-            modifier = Modifier.padding(bottom = 8.dp)
-        ) {
-            Box(contentAlignment = Alignment.BottomStart) {
-                Image(
-                    painter = painterResource(entry.image),
-                    contentDescription = null,
-                    contentScale = ContentScale.FillWidth,
-                    modifier = Modifier.fillMaxWidth()
+        if (widthSizeClass == WindowWidthSizeClass.Expanded) {
+            Card(
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 8.dp)
+            ) {
+                Text(
+                    text = stringResource(entry.name),
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.displaySmall,
+                    modifier = Modifier
+                        .padding(horizontal = 16.dp, vertical = 8.dp)
+                        .align(Alignment.CenterHorizontally)
                 )
-                Card(
-                    modifier = Modifier.padding(8.dp),
-                    elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
-                ) {
-                    Row(
+            }
+        }
+        Column(
+            verticalArrangement = Arrangement.Center,
+            modifier = Modifier.verticalScroll(rememberScrollState()).weight(1f),
+        ) {
+            Card(
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                modifier = Modifier.padding(bottom = 8.dp)
+            ) {
+                Box(contentAlignment = Alignment.BottomStart) {
+                    Image(
+                        painter = painterResource(entry.image),
+                        contentDescription = null,
+                        contentScale = ContentScale.FillWidth,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    Card(
                         modifier = Modifier.padding(8.dp),
-                        verticalAlignment = Alignment.CenterVertically
+                        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
                     ) {
-                        Text(
-                            text = stringResource(entry.rate),
-                            textAlign = TextAlign.Start,
-                            style = MaterialTheme.typography.bodyMedium
-                        )
-                        Spacer(modifier = Modifier.width(4.dp))
-                        Icon(
-                            painter = painterResource(R.drawable.ic_star_rate),
-                            contentDescription = null
-                        )
+                        Row(
+                            modifier = Modifier.padding(8.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = stringResource(entry.rate),
+                                textAlign = TextAlign.Start,
+                                style = MaterialTheme.typography.bodyMedium
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Icon(
+                                painter = painterResource(R.drawable.ic_star_rate),
+                                contentDescription = null
+                            )
+                        }
                     }
                 }
-            }
 
-        }
-        Card(
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
-            modifier = Modifier
-                .weight(1f)
-                .verticalScroll(rememberScrollState())
-        ) {
-            Text(
-                text = stringResource(entry.description),
-                textAlign = TextAlign.Justify,
-                style = MaterialTheme.typography.bodyMedium,
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-            )
+            }
+            Card(
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
+            ) {
+                Text(
+                    text = stringResource(entry.description),
+                    textAlign = TextAlign.Justify,
+                    style = MaterialTheme.typography.bodyMedium,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+                )
+            }
         }
         Card(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
@@ -116,6 +141,7 @@ fun DetailsScreenPreview() {
                 description = R.string.beach_3_description,
                 image = R.drawable.beach_3_image,
             ),
+            widthSizeClass = WindowWidthSizeClass.Compact,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(8.dp)

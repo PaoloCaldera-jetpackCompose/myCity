@@ -12,6 +12,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -27,6 +28,7 @@ import com.example.mycity.viewmodel.MyCityViewModel
 fun MyCityCompact(
     uiState: UiState,
     viewModel: MyCityViewModel,
+    widthSizeClass: WindowWidthSizeClass,
     modifier: Modifier = Modifier
 ) {
     Column {
@@ -60,6 +62,7 @@ fun MyCityCompact(
                 CategoryEntriesScreen(
                     entries = Datasource.getEntries(uiState.selectedCategory.id),
                     onClick = { viewModel.updateSelectedEntry(it) },
+                    widthSizeClass = widthSizeClass,
                     modifier = modifier
                 )
             }
@@ -72,6 +75,7 @@ fun MyCityCompact(
                 )
                 DetailsScreen(
                     entry = uiState.selectedEntry,
+                    widthSizeClass = widthSizeClass,
                     modifier = modifier
                 )
             }
