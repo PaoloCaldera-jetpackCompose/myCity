@@ -137,7 +137,7 @@ fun MyCityMediumAppBar(uiState: UiState, navigateUp: () -> Unit) {
         title = {
             when (uiState.selectedScreen) {
 
-                MyCityScreen.Entries -> {
+                MyCityScreen.Entries, MyCityScreen.Categories -> {
                     Text(
                         text = stringResource(uiState.selectedCategory.name),
                         textAlign = TextAlign.Center,
@@ -164,6 +164,6 @@ fun MyCityMediumAppBar(uiState: UiState, navigateUp: () -> Unit) {
                     contentDescription = stringResource(R.string.navigate_up_button)
                 )
             }
-        }
+        }, modifier = Modifier.testTag("TAG_APP_BAR")
     )
 }
