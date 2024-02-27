@@ -5,10 +5,32 @@
       <entry key="app">
         <State />
       </entry>
-      <entry key="myCityApp_verifyInitialScreen()">
+      <entry key="myCityApp_expandedSize_verifyInitialScreenAsWelcomeScreen()">
         <State />
       </entry>
-      <entry key="welcomeScreen_noUpButtonShown()">
+      <entry key="myCityApp_mediumSize_verifyInitialScreenAsWelcomeScreen()">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\paolo\.android\avd\Resizable_Experimental_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-02-27T11:32:31.983298900Z" />
+        </State>
+      </entry>
+      <entry key="startExploringButton_OnClick()">
+        <State />
+      </entry>
+      <entry key="startExploringButton_mediumSize_OnClick()">
+        <State />
+      </entry>
+      <entry key="welcomeScreen_expandedSize_noUpButtonShown()">
         <State />
       </entry>
     </value>
