@@ -5,6 +5,21 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="categoriesScreen_compactSize_upButtonShown()">
+        <State />
+      </entry>
+      <entry key="categoriesScreen_expandedSize_NoUpButtonShown()">
+        <State />
+      </entry>
+      <entry key="categoriesScreen_mediumSize_upButtonShown()">
+        <State />
+      </entry>
+      <entry key="myCityApp_expandedSize_configurationChange()">
+        <State />
+      </entry>
+      <entry key="navigateToCategoriesScreen_expandedSize_inspectContent()">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
