@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Rimini</string>
     <string name="app_description">Rimini is an Italian municipality of approximately 150k inhabitants, located in the Emilia-Romagna italian region. The city is characterized by the presence of summer experiences of international relevance, with a coastline that extends for 15 km along the coast of the Adriatic sea. Rimini is colony founded by the Romans in 268 BC: for the entire period of the Roman domination it was a communication hub between the north and south of the peninsula, and on its soil the Roman emperors erected monuments of which important traces still remain today. It was the land of the Malatesta family: the court of Sigismondo Pandolfo Malatesta was one of the liveliest of the time, hosting artists such as Leon Battista Alberti and Piero della Francesca, and preserving important works of the Italian Renaissance.</string>
+    <string name="app_logo">Rimini logo</string>
     <string name="general_address">%s Rimini, Italy</string>
     <string name="start_exploring">Start exploring!</string>
     <string name="navigate_up_button">Navigate Up button</string>
     <string name="home_category">Home</string>
-    <string name="home_button">Home button</string>
 
 
 

@@ -5,6 +5,12 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="myCityApp_verifyInitialScreen()">
+        <State />
+      </entry>
+      <entry key="welcomeScreen_noUpButtonShown()">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

@@ -21,6 +21,7 @@ import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -96,17 +97,20 @@ fun MyCityMediumNavigationRail(
     onClickHomeScreen: () -> Unit,
     onClickCategory: (Category) -> Unit
 ) {
-    NavigationRail(modifier = Modifier.padding(4.dp)) {
+    NavigationRail(modifier = Modifier
+        .padding(4.dp)
+        .testTag("TAG_NAVIGATION_RAIL")) {
         NavigationRailItem(
             selected = uiState.selectedScreen == MyCityScreen.Welcome,
             onClick = { onClickHomeScreen() },
             icon = {
                 Icon(
                     imageVector = Icons.Default.Home,
-                    contentDescription = stringResource(R.string.home_button),
+                    contentDescription = stringResource(R.string.home_category),
                     tint = MaterialTheme.colorScheme.onSurfaceVariant
                 )
-            }
+            },
+            modifier = Modifier.testTag("TAG_HOME_NAVIGATION_RAIL")
         )
 
         for (category in Datasource.getCategories()) {
@@ -119,7 +123,8 @@ fun MyCityMediumNavigationRail(
                         contentDescription = stringResource(category.name),
                         modifier = Modifier.size(24.dp)
                     )
-                }
+                },
+                modifier = Modifier.testTag("TAG_${stringResource(category.name).uppercase()}_NAVIGATION_RAIL")
             )
         }
     }

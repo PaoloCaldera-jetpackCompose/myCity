@@ -20,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -40,7 +41,7 @@ fun WelcomeScreen(
     ) {
         Image(
             painter = painterResource(R.drawable.my_city_logo),
-            contentDescription = null,
+            contentDescription = stringResource(R.string.app_logo),
             contentScale = ContentScale.Fit,
             modifier = Modifier.height(192.dp)
         )
@@ -56,7 +57,8 @@ fun WelcomeScreen(
                 Text(
                     text = stringResource(R.string.app_description),
                     textAlign = TextAlign.Justify,
-                    style = MaterialTheme.typography.labelSmall
+                    style = MaterialTheme.typography.labelSmall,
+                    modifier = Modifier.testTag("TAG_CITY_DESCRIPTION")
                 )
 
             }
