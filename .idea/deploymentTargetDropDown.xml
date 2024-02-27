@@ -5,32 +5,19 @@
       <entry key="app">
         <State />
       </entry>
-      <entry key="myCityApp_expandedSize_verifyInitialScreenAsWelcomeScreen()">
+      <entry key="categoriesScreen_compactSize_upButtonShown()">
         <State />
       </entry>
-      <entry key="myCityApp_mediumSize_verifyInitialScreenAsWelcomeScreen()">
-        <State>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\paolo\.android\avd\Resizable_Experimental_API_34.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-02-27T11:32:31.983298900Z" />
-        </State>
-      </entry>
-      <entry key="startExploringButton_OnClick()">
+      <entry key="categoriesScreen_expandedSize_NoUpButtonShown()">
         <State />
       </entry>
-      <entry key="startExploringButton_expandedSize_OnClick()">
+      <entry key="categoriesScreen_mediumSize_upButtonShown()">
         <State />
       </entry>
-      <entry key="startExploringButton_mediumSize_OnClick()">
+      <entry key="myCityApp_expandedSize_configurationChange()">
+        <State />
+      </entry>
+      <entry key="navigateToCategoriesScreen_expandedSize_inspectContent()">
         <State />
       </entry>
     </value>
