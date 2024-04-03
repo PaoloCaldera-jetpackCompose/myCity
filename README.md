@@ -12,14 +12,14 @@ The project demonstrates the ability to separate the view model layer from the U
 
 The project comprises four screens whose layout is developed through Jetpack Compose. The theme has been selected and created with the help of [Material Design 3 Theme Builder](https://m3.material.io/theme-builder#/custom).
 
-Visit the [Wiki](https://github.com/PaoloCaldera-jetpackCompose/myCity/wiki) to see the application screens.
+Visit the [Wiki](https://github.com/PaoloCaldera/myCity/wiki) to see the application screens.
 
 
 ## Getting Started
 
 To clone the repository, use the command
 ```
-$ git clone https://github.com/PaoloCaldera-jetpackCompose/myCity.git
+$ git clone https://github.com/PaoloCaldera/myCity.git
 ```
 or the `Get from VCS` option inside Android Studio by copying the link above.
 
